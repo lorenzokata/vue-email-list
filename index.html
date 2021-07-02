@@ -14,9 +14,9 @@
 
     <div id="app">
 
-        <div v-if="randomMail.length == 10" v-for="(mail, index) in randomMail">
+        <div v-if="randomMail.length == 10">
             <ul>
-                <li>Mail n. {{index+1}}: {{mail}}</li>
+                <li v-for="(mail, index) in randomMail">Mail n. {{index+1}}: {{mail}}</li>
             </ul>
         </div>
 
